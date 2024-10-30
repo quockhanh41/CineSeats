@@ -81,4 +81,30 @@ movie-ticket/
 └── package.json                # Package and script definitions
 ```
 
+### Routing Structure
+The application uses `react-router-dom` for managing routes. Below are the defined routes along with their respective components and descriptions:
+
+- **`/`**: **HomePage**
+  - Displays the main landing page with featured movies and promotional content.
+
+- **`/account`**: **Account**
+  - Allows users to view and manage their account details, including personal information and booking history.
+
+- **`/login`**: **Login**
+  - Provides a form for users to log into their accounts. Users can enter their credentials to access their profile.
+
+- **`/register`**: **Register**
+  - Displays a registration form for new users to create an account. Users will input their details to sign up.
+
+- **`/movie`**: **Movie**
+  - Shows information of a movie. Users can see more details or book tickets.
+
+- **`/contact`**: **Contact**
+  - Provides a contact form for users to reach out to support or provide feedback. This page can also include contact information and FAQs.
+
+- **`/payment`**: **Payment**
+  - Facilitates the payment process for movie ticket bookings. Users can enter their payment details and complete their purchases.
+
+- **`/admin`**: **Admin**
+  - A dedicated page for admin users to manage the application, including adding or removing movies, viewing bookings, and user management.
 

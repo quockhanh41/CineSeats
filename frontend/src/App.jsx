@@ -1,12 +1,34 @@
-import { useState } from 'react'
+import React, { Fragment } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
+import Header from './components/header';
+import Footer from './components/footer'
+import { routes } from './routes/index'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="bg-blue-500 text-white p-4 text-center">
-      <h1 className='text-2xl font-bold'>Welcome to Your Movie Ticket Booking Website!</h1>
+    <div>
+      <Router>
+        <Routes>
+          {routes.map((route) => {
+            const Page = route.page
+            const LayoutHeader = route.isShowHeader ? Header : Fragment
+            const LayoutFooter = route.isShowFooter ? Footer : Fragment
+
+            return (
+              <Route key={route.path} path={route.path} element={
+                <>
+                  <LayoutHeader />
+                  <Page />
+                  <LayoutFooter />
+                </>
+
+
+              } />
+            )
+          })}
+        </Routes>
+      </Router>
     </div>
   );
 }
