@@ -2,14 +2,14 @@
 
 # Movie Ticket Booking Website
 
-This is a web application for booking movie tickets, built with **Vite** and **React**, featuring a modern interface styled with **Tailwind CSS**.
+This is a web application for booking movie tickets, built with **Vite** and **React**, featuring a modern interface styled with **Bootstrap**.
 The app includes features such as movie search, ticket booking, user account management, and more.
 
 ## Technologies Used
 
 - **Vite**: A fast build tool for fronted projects.
 - **React**: A powerful library for building user interfaces.
-- **Tailwind CSS**: A utility-first CSS framework that makes styling fast and efficient.
+- **Bootstrap**: A popular CSS framework that facilitates responsive design and fast styling.
 - **ESLint**: A syntax-checking tool for JavaScript to ensure clean and error-free code.
 
 ## Installation

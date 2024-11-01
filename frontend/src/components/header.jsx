@@ -1,26 +1,19 @@
-// src/components/Header.js
 import React from 'react';
 
 function Header() {
     return (
-        <header className="flex items-center justify-between p-4 border-b">
-            <div className="flex items-center">
+        <header className="d-flex align-items-center justify-content-between p-4 border-bottom">
+            <div className="d-flex align-items-center">
                 <img alt="Company logo" className="h-12 w-12" height="50" src="https://storage.googleapis.com/a1aa/image/2um8YNI9XeT5eEEvEaROXvye9Tj7LBmCD70OeaNKP7gML8vOB.jpg" width="50" />
             </div>
-            <div className="flex items-center space-x-4">
-                <div className="relative">
-                    <input className="pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600" placeholder="Search movies, cinemas" type="text" />
-                    <i className="fas fa-bars absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">
-                    </i>
-                    <i className="fas fa-search absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500">
-                    </i>
+            <div className="d-flex align-items-center">
+                <div className="position-relative me-4">
+                    <input className="form-control pl-5" placeholder="Search movies, cinemas" type="text" />
+                    <i className="fas fa-bars position-absolute left-3 top-50 translate-middle-y text-secondary"></i>
+                    <i className="fas fa-search position-absolute right-3 top-50 translate-middle-y text-secondary"></i>
                 </div>
-                <button className="px-4 py-2 border border-gray-300 rounded-full">
-                    Sign in
-                </button>
-                <button className="px-4 py-2 bg-black text-white rounded-full">
-                    Register
-                </button>
+                <button className="btn btn-outline-secondary me-2">Sign in</button>
+                <button className="btn btn-dark">Register</button>
             </div>
         </header>
     );
